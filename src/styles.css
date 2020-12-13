@@ -44,7 +44,7 @@ input {
 input[type=email]:not(:focus):invalid,
 input[type=password]:not(:focus):invalid {
     color: var(--color-error);
-    border-color: var(--color-error);
+    outline-color: var(--color-error);
 }
 
 label {
@@ -61,6 +61,12 @@ button {
     display: block;
     font-size: var(--mobile-font-size);
     transition: all 0.3s;
+}
+
+button:disabled {
+    opacity: 0.5;
+    background-color: var(--color-dark);
+    color: #fff;
 }
 
 .row {
