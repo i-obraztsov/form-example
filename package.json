@@ -1,0 +1,28 @@
+{
+    "name": "form-example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "clean": "rm -rf build",
+        "start": "snowpack dev",
+        "build": "snowpack build"
+    },
+    "dependencies": {
+        "prop-types": "^15.7.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.1.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.15.0",
+        "eslint-plugin-react": "^7.21.5",
+        "postcss": "^8.2.1",
+        "postcss-cli": "^8.3.0",
+        "snowpack": "^2.18.3"
+    }
+}

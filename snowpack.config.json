@@ -1,0 +1,24 @@
+{
+    "mount": {
+        "build": "/",
+        "src": "/",
+        "public": "/"
+    },
+    "plugins": [
+        [
+            "@snowpack/plugin-build-script",
+            {
+                "cmd": "postcss",
+                "input": [
+                    ".css"
+                ],
+                "output": [
+                    ".css"
+                ]
+            }
+        ],
+        ["@snowpack/plugin-run-script", {
+            "cmd": "eslint \"src/**/*.{js,jsx}\""
+        }]
+    ]
+}
